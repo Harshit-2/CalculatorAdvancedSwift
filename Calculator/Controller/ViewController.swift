@@ -37,13 +37,13 @@ class ViewController: UIViewController {
         calculator.setNumber(displayValue)
         
         if let calcMethod = sender.currentTitle {
- 
+            
             if let result = calculator.calculate(symbol: calcMethod) {
                 displayValue = result
             }
         }
     }
-
+    
     
     @IBAction func numButtonPressed(_ sender: UIButton) {
         
@@ -68,5 +68,5 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
 }
